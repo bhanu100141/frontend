@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+/* --------------------TransactionList--------------- */
+.transactions-list{
+    background-color: white;
+}
+
+.transactions-list h2 {
+  text-align: center;
+  color: #0e0101;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.transactions-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table{
+  border: 2px solid black;
+}
+.transactions-list th,
+.transactions-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #d6cfcf;
+  
+}
+
+.transactions-list th {
+  background-color: #141212;
+  color: #ffffff;
+}
+
+.transactions-list .table-row:hover {
+  background-color: #ececec;
+}
+.transaction-list-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: coral;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.transaction-list-button:hover {
+  background-color: #218838;
+}
+
+/* -------------- Transaction-Form --------------------- */
+.transaction-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(127, 115, 115, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background-image: linear-gradient(rgb(227, 220, 218),rgb(229, 130, 94));
+  height: 60vh;
+  margin-bottom: 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+form input{
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+form select{
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5d6067;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.transactionform-button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: end;
+}
+.cancel {
+  background-color: rgb(179, 174, 169);
+}
+.cancel:hover {
+  background-color: rgb(211, 97, 84);
+}
+.submit {
+  background-color: rgb(31, 30, 30);
+  color: white;
+}
+.submit:hover {
+  background-color: rgb(101, 108, 157);
+}
+/* -------------------Add-Transaction--------------------- */
+.add-transaction {
+  margin: 0;
+  border: 3px solid black;
+  padding: 5px 30px 30px 30px;
+}
+ h2 {
+  text-align: center;
+  color: coral;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.add-transaction-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center; 
+  
+}
+.img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .img{
+    display: none;
+  }
+  .add-transaction {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+  }
+  form{
+   padding: 20px;
+   width: 80vw;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+  }
+}
